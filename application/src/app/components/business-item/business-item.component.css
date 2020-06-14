@@ -1,0 +1,25 @@
+.item{
+margin-left:25px;
+padding-left:25px;
+height: 200px;
+float: left;
+}
+
+.details-header{
+    font-size: 1.5rem;
+    border-bottom: solid 1px black;
+    text-transform: capitalize;
+}
+
+.delete{
+    font-size:initial;
+    cursor: pointer;
+    text-align: center;
+}
+
+.more {
+    color: white;
+    padding: 5px;
+    font-size: xx-small;
+
+}

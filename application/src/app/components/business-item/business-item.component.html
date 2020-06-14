@@ -1,0 +1,21 @@
+
+
+<div *ngFor="let item of businessItem">
+<div  class="item col-lg-4 ml-0 pl-0">
+   <div class="row">
+    <div class="col-lg-8 details-header" >{{item.title}}</div>
+    <div class="col-lg-2"
+    (click)="deleteBusiness(item.title)">
+    <h2 class="delete">X</h2>
+   
+    </div>
+    </div>
+    <br><div class="display-2 " style="font-size: 1.5rem;">{{item.notes}}</div><br>
+
+    <span class="right badge badge-primary" style="padding: 5px"><a class="more display-2" 
+        (click)="getKey(item.title)" 
+        [routerLink]="['/business',item.title]" >More</a></span>
+</div>
+
+</div>
+

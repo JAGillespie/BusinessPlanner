@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Business Planner</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="scroll-left">
+    
+      <p>
+        {{text}} -<i>{{author}}</i>
+      </p>
+      </div>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center"><span>Development Planner</span></h1>
+<form id="business-form" #businessForm="ngForm" (ngSubmit)="saveBusiness(businessForm)">
+  <div class="form-group">
+    <h3>Title</h3>
+    <input 
+    type="text" 
+    id="title" 
+    class="form-control" 
+    name="title" 
+    [(ngModel)]="title">
+  </div>
+
+  <div class="form-group">
+    <h3>Brief  Description</h3>
+    <textarea 
+    type="text" 
+    id="narrative" 
+    class="form-control" 
+    rows="10"
+    name="notes" 
+    [(ngModel)]="notes"></textarea>
+  </div>
+  <input type="submit" value="Add Business Idea" class="btn btn-primary btn-block button btn-style">
+</form>
+</div>
+<div id ="block" class="col-lg-12 mt-5">
+<app-business-item></app-business-item>
+
+</div>
+
+  </body>
+</html>

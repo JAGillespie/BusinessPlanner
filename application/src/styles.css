@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,900;1,300&display=swap');
+
+html{
+    font-family: 'Rubik', sans-serif;
+}
+
+input[type=text], textarea[type=text] {
+    width: 100%;
+    
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 18px;
+  }
+
+  input.form-control[type=text], textarea.form-control[type=text] {
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 18px;
+  }
+
+.form-label{
+    font-family: Arial;
+    font-size: 14px;
+}
