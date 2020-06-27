@@ -16,7 +16,6 @@ import { BannerMessageService } from "../../services/bannerMessage.service"
 export class HomeComponent implements OnInit {
     business:Business;
     businesses: Business[]; //uses interface
-    buzinezzes: any = [];
     author:any;
     text:any;
 

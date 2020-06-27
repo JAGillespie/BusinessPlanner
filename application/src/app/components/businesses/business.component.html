@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-lg-1"></div>
-  <div class="col-lg-10">
+  <div class="col-lg-7">
 
     <div class="jumbotron" *ngFor="let item of businesssVenture">
       <h2 style="text-transform: capitalize;">{{item.title}} -REPORT</h2>
@@ -11,6 +11,9 @@
       <div>Starting Capital{{item.capital}}</div>
       </div>
  
+  </div>
+  <div class="col-lg-3">
+    <app-todo-list></app-todo-list>
   </div>
   <div class="col-lg-1"></div>
 </div>
